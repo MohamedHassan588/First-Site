@@ -1,102 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styleSheets/all.css">
-    <link rel="stylesheet" href="styleSheets/bootstrap.min.css">
-    <link rel="stylesheet" href="styleSheets/styleMaster.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styleSheets/all.css" />
+    <link rel="stylesheet" href="styleSheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="styleSheets/styleMaster.css" />
     <title>Arch</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="fixed-top py-2 bg-dark bg-opacity-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div
+            class="container-fluid d-flex align-items-center justify-content-between"
+          >
+            <a href="" class="text-white">
+              <h2 class="logo">DevFolio</h2>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon btn-close-white"></span>
+            </button>
 
-    <header class="fixed-top py-2  bg-dark bg-opacity-100">
-        <div class="container">
+            <div
+              class="collapse navbar-collapse flex-grow-0"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item active mx-1">
+                  <a class="nav-link text-white" href="#home"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link text-white" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link text-white" href="#services">SERVICES</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link text-white" href="#work">WORK</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link text-white" href="#blog">BLOG</a>
+                </li>
+                <li class="nav-item navitm mx-1 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul
+                    class="dropdown-menu drp1 text-start"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
 
-
-            <nav class="navbar navbar-expand-lg navbar-light   ">
-                <div class="container-fluid d-flex align-items-center justify-content-between">
-
-                    <a href="" class="text-white">
-                        <h2 class="logo">DevFolio</h2>
-                    </a>
-                    <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon btn-close-white "></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item active mx-1">
-                                <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item  mx-1">
-                                <a class="nav-link text-white" href="#about">ABOUT</a>
-                            </li>
-                            <li class="nav-item  mx-1">
-                                <a class="nav-link text-white" href="#services">SERVICES</a>
-                            </li>
-                            <li class="nav-item  mx-1">
-                                <a class="nav-link text-white" href="#work">WORK</a>
-                            </li>
-                            <li class="nav-item  mx-1">
-                                <a class="nav-link text-white" href="#blog">BLOG</a>
-                            </li>
-                            <li class="nav-item navitm mx-1 dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                                <ul class="dropdown-menu drp1 text-start " aria-labelledby="navbarDropdown">
-
-                                    <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-
-                                    <li class=" dropend navitm2 ">
-                                        <a class="nav-link text-dark ms-1 dropdown-toggle  " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Deep Dropdown</a>
-                                        <ul class="dropdown-menu drp2 shadow  ">
-                                            <li><a class="dropdown-item " href=""> Deep Dropdown 1</a></li>
-                                            <li><a class="dropdown-item" href=""> Deep Dropdown 2</a></li>
-                                            <li><a class="dropdown-item" href=""> Deep Dropdown 3</a></li>
-                                            <li><a class="dropdown-item" href=""> Deep Dropdown 4</a></li>
-                                            <li><a class="dropdown-item" href=""> Deep Dropdown 5</a></li>
-                                        </ul>
-
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
-                                    <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item  mx-1">
-                                <a class="nav-link text-white " href="#contact">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-        </div>
-    </header>
-    <section class="home  vh-100  " id="home">
-        <div class="layer row bg-black bg-opacity-50 h-100 w-100">
-            <div class="container col-12 py-lg-5 text-white align-self-center ">
-                <h1>I am Morgan Freeman</h1>
-                <h3 class="pt-3"></h3>
+                    <li class="dropend navitm2">
+                      <a
+                        class="nav-link text-dark ms-1 dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        href="#"
+                        role="button"
+                        aria-expanded="false"
+                        >Deep Dropdown</a
+                      >
+                      <ul class="dropdown-menu drp2 shadow">
+                        <li>
+                          <a class="dropdown-item" href=""> Deep Dropdown 1</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href=""> Deep Dropdown 2</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href=""> Deep Dropdown 3</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href=""> Deep Dropdown 4</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href=""> Deep Dropdown 5</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link text-white" href="#contact">CONTACT</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="home vh-100" id="home">
+      <div class="layer row bg-black bg-opacity-50 h-100 w-100">
+        <div class="container col-12 py-lg-5 text-white align-self-center">
+          <h1>I am Morgan Freeman</h1>
+          <h3 class="pt-3"></h3>
         </div>
+      </div>
     </section>
 
-
-
-
-
-
-
-
-
-
+    <section id="about" class="about">
+      <div class="container item-about">
+        <div class="row item pt-4">
+          <div class="col-md-6 pb-4">
+            <div class="row mb-4">
+              <div class="col-4 about-img">
+                <img class="rounded-2 w-100" src="./img/testimonial-2.jpg" />
+              </div>
+              <div class="personal-info col-8 about-img">
+                <div>
+                  <span class="tittle-s fw-bold">Name:</span>
+                  <span>Mohamed Elkhawaga</span>
+                </div>
+                <div>
+                  <span class="tittle-s fw-bold">Profile:</span>
+                  <span>full stack developer</span>
+                </div>
+                <div>
+                  <span class="tittle-s fw-bold">Email: </span>
+                  <span> contact@example.com</span>
+                </div>
+                <div>
+                  <span class="tittle-s fw-bold">Phone:</span>
+                  <span>(617) 557-0089</span>
+                </div>
+              </div>
+            </div>
+            <div class="Progres">
+              <h5 class="mb-3">Skill</h5>
+              <div class="Progres-items">
+                <div class="item">
+                  <span>HTML 85%</span>
+                  <div class="Progres-html w-100"></div>
+                </div>
+                <div class="item">
+                  <span>CSS3 75%</span>
+                  <div class="Progres-css w-100"></div>
+                </div>
+                <div class="item">
+                  <span>PHP 50%</span>
+                  <div class="Progres-php w-100"></div>
+                </div>
+                <div class="item">
+                  <span>JAVASCRIPT 90%</span>
+                  <div class="Progres-javascript w-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-contant col-md-6">
+            <div class="title-about">
+              <h5 class="fw-normal fs-3 mt-sm-3 mt-md-0">About me</h5>
+            </div>
+            <div class="text-about fs-6">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                nobis delectus odio laborum voluptate provident officiis
+                tempore, odit error exercitationem laboriosam fuga quis magni
+                eligendi itaque suscipit consequatur debitis. Atque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                nobis delectus odio laborum voluptate provident officiis
+                tempore, odit error exercitationem laboriosam fuga quis magni
+                eligendi itaque suscipit consequatur debitis. Atque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                nobis delectus odio laborum voluptate provident officiis
+                tempore, odit error exercitationem laboriosam fuga quis magni
+                eligendi itaque suscipit consequatur debitis. Atque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="jsFiles/bootstrap.bundle.min.js"></script>
     <script src="jsFiles/index.js"></script>
-</body>
-
+  </body>
 </html>

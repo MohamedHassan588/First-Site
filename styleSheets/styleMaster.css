@@ -1,3 +1,18 @@
+:root {
+    --margin-bottom-l: 2.5rem;
+    --margin-bottom-sh: 1.5rem;
+    --margin-top: 1.5rem;
+    --padding-section-top-bottom: 3rem;
+    --bolder-color: #1e1e1e;
+    --background-color: #f5f5f5;
+    --background-color-item: #ffffff;
+    --main-color: #0078ff;
+    --main-color-opicty: #0077ff44;
+    --text-color: #4e4e4e;
+    --box-shadow: #4e4e4e63;
+}
+
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #f5f5f5;
@@ -91,4 +106,79 @@ h1 {
     100% {
         content: "Photographer |";
     }
+}
+.about {
+    background-color: var(--background-color);
+    padding: var(--padding-section-top-bottom) 0px;
+}
+
+.about .item-about {
+    background-color: var(--background-color-item);
+    box-shadow: 1px 1px 5px var(--box-shadow), -1px -1px 5px var(--box-shadow);
+}
+
+.personal-info {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.personal-info div>.tittle-s {
+    color: var(--bolder-color);
+}
+
+.personal-info div .tittle-s+span {
+    color: var(--text-color);
+}
+
+.about-contant h5 {
+    position: relative;
+}
+
+.about-contant h5::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    bottom: -10px;
+    left: 0px;
+    width: 20%;
+    height: 3px;
+}
+
+.title-about {
+    padding-bottom: var( --margin-bottom-sh);
+}
+
+.about-contant .text-about {
+    color: var(--text-color);
+}
+
+.Progres .Progres-items .item {
+    margin-bottom: var(--margin-bottom-sh);
+}
+
+.Progres .Progres-items .item span {
+    color: var(--text-color);
+}
+
+.Progres .Progres-items .item span~div {
+    height: 10px;
+}
+
+.Progres .Progres-items .item span~.Progres-html {
+    background-image: linear-gradient(90deg, var(--main-color) 85%, var(--background-color) 15%);
+}
+
+.Progres .Progres-items .item span~.Progres-css {
+    background-image: linear-gradient(90deg, var(--main-color) 75%, var(--background-color) 25%);
+}
+
+.Progres .Progres-items .item span~.Progres-php {
+    background-image: linear-gradient(90deg, var(--main-color) 50%, var(--background-color) 50%);
+}
+
+.Progres .Progres-items .item span~.Progres-javascript {
+    background-image: linear-gradient(90deg, var(--main-color) 90%, var(--background-color) 10%);
 }
